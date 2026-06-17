@@ -1,15 +1,17 @@
 package com.studentmanagementsystem.StudentManagementSystem.entity;
 
+import com.studentmanagementsystem.StudentManagementSystem.constants.Specialization;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.io.Serializable;
+import javax.print.attribute.standard.MediaSize;
+import java.math.BigDecimal;
 
 @Entity
 @Getter
 @Setter
-public class Student implements Serializable {
+public class Teacher {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,16 +26,10 @@ public class Student implements Serializable {
     @Column(name = "EMAIL")
     private String email;
 
-    @ManyToOne
-    @JoinColumn(name = "DEPARTMENT_ID")
-    private Department department;
+    @Enumerated(EnumType.STRING)
+    private Specialization specialization;
 
-    @ManyToOne
-    @JoinColumn(name = "COURSE_ID")
-    private Course course;
-
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "ADDRESS_ID")
-    private Address address;
+    @Column(name = "SALARY")
+    private BigDecimal salary;
 
 }

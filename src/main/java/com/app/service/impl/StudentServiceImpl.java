@@ -1,11 +1,11 @@
 package com.app.service.impl;
 
 import com.app.converter.StudentConverter;
-import com.app.entity.Student;
 import com.app.model.StudentRequest;
 import com.app.model.StudentResponse;
 import com.app.repository.StudentRepository;
 import com.app.service.StudentService;
+import com.schema.entity.Student;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

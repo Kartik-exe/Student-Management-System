@@ -1,8 +1,8 @@
 package com.app.model;
 
-import com.app.entity.Address;
-import com.app.entity.Course;
-import com.app.entity.Department;
+import com.schema.entity.Address;
+import com.schema.entity.Course;
+import com.schema.entity.Department;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;

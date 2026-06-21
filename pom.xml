@@ -31,6 +31,12 @@
 	</properties>
 	<dependencies>
 
+		<dependency>
+			<groupId>com.sms</groupId>
+			<artifactId>db-schema</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
 		<!-- REST APIs -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

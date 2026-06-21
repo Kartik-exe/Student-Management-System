@@ -1,6 +1,6 @@
 package com.app.model;
 
-import com.app.constants.Specialization;
+import com.schema.constants.Specialization;
 import lombok.Getter;
 import lombok.Setter;
 

@@ -1,8 +1,8 @@
 package com.app.converter;
 
-import com.app.entity.Student;
 import com.app.model.StudentRequest;
 import com.app.model.StudentResponse;
+import com.schema.entity.Student;
 import org.springframework.stereotype.Component;
 
 @Component
